@@ -72,9 +72,11 @@ void Character::playJumpAnimation()
     ));
 
     Vector<SpriteFrame*> jumpFrames;
-    for (int i = 0; i < 7; ++i)
+    for (int i = 0; i < 9; ++i)
     {
         std::string frameName = StringUtils::format("Sprite/Character/jump-%d.png", i);
+
+        CCLOG("Width and High value : %f %f", this->getContentSize().width, this->getContentSize().height);
         auto frame = SpriteFrame::create(frameName, Rect(0, 0, this->getContentSize().width, this->getContentSize().width));
         frame->setAnchorPoint(Vec2(0.5f, 0.5f));
         jumpFrames.pushBack(frame);
