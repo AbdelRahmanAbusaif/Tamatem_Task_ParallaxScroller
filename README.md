@@ -1,4 +1,3 @@
-# Tamatem_Task_ParallaxScroller
 # Parallax Scene with Character and UI in Cocos2d-x
 
 This project is a simple demonstration of a horizontal parallax scene using **Cocos2d-x**, featuring:
