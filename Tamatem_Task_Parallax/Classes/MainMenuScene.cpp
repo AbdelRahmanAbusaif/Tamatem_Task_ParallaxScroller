@@ -34,6 +34,12 @@ bool MainMenuScene::init()
     jumpButton->setPosition(Vec2(Director::getInstance()->getVisibleSize().width - 70, 70));
     addChild(jumpButton);
 
+    // Enable touch events
+    auto touchListener = EventListenerTouchOneByOne::create();
+    touchListener->setSwallowTouches(true);
+    touchListener->onTouchBegan = CC_CALLBACK_2(MainMenuScene::onTouchBegan, this);
+    touchListener->onTouchMoved = CC_CALLBACK_2(MainMenuScene::onTouchMoved, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 
     return true;
 }

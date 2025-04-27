@@ -28,9 +28,17 @@ bool ParallaxManager::init()
 
 void ParallaxManager::addInfiniteLayer(const std::string& fileName, const cocos2d::Vec2& ratio,cocos2d::Vector<cocos2d::Sprite *> &layerVector)
 {
-    auto sprite1 = Sprite::create(fileName);
-    auto sprite2 = Sprite::create(fileName);
-    auto sprite3 = Sprite::create(fileName);
+    auto createAndConfigureSprite = [&](const std::string &nameSuffix, float positionX) -> Sprite* {
+        auto sprite = Sprite::create(fileName);
+        sprite->setName(fileName + nameSuffix);
+        sprite->setContentSize(_visibleSize);
+        sprite->setPositionX(positionX);
+        return sprite;
+    };
+
+    auto sprite1 = createAndConfigureSprite("1", _visibleSize.width / 2 + _origin.x);
+    auto sprite2 = createAndConfigureSprite("2", _visibleSize.width / 2 + _origin.x + sprite1->getContentSize().width);
+    auto sprite3 = createAndConfigureSprite("3", _visibleSize.width / 2 + _origin.x - sprite1->getContentSize().width);
 
     float width = sprite1->getContentSize().width;
 

@@ -655,3 +655,7 @@
 48	2317	7674676991655760	CMakeFiles/MyGame.dir/Classes/MainMenuScene.cpp.o	18b58f5708cbd13a
 43	2413	7674676992590891	CMakeFiles/MyGame.dir/Classes/Character.cpp.o	c8a4704b9d9d28d9
 2413	5504	7674677023676916	../../../../build/intermediates/cxx/Debug/4gz17513/obj/arm64-v8a/libMyGame.so	b4a69e2111e63a96
+25	1802	7674685750381995	CMakeFiles/MyGame.dir/Classes/ParallaxManager.cpp.o	421a53808709ef9b
+1802	4956	7674685781942428	../../../../build/intermediates/cxx/Debug/4gz17513/obj/arm64-v8a/libMyGame.so	b4a69e2111e63a96
+29	1954	7674686236968861	CMakeFiles/MyGame.dir/Classes/MainMenuScene.cpp.o	18b58f5708cbd13a
+1954	4867	7674686266277287	../../../../build/intermediates/cxx/Debug/4gz17513/obj/arm64-v8a/libMyGame.so	b4a69e2111e63a96
