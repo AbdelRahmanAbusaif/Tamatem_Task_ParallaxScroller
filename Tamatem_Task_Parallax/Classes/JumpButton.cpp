@@ -2,6 +2,7 @@
 
 USING_NS_CC;
 
+// Factory Pattern: Responsible for creating and initializing a JumpButton instance
 JumpButton* JumpButton::createJumpButton(Character& character)
 {
     JumpButton* button = new (std::nothrow) JumpButton();
@@ -14,6 +15,7 @@ JumpButton* JumpButton::createJumpButton(Character& character)
     return nullptr;
 }
 
+// Initialize the JumpButton with a reference to the Character instance
 bool JumpButton::init(Character& character)
 {
     if (!Node::init())
@@ -24,6 +26,7 @@ bool JumpButton::init(Character& character)
 
     _character = &character;
 
+    // Create a button using MenuItemImage
     auto jumpButton = MenuItemImage::create(
             "Sprite/UI/Jump Button.png",
             "Sprite/UI/Jump Button Clicked.png",
@@ -32,9 +35,11 @@ bool JumpButton::init(Character& character)
             }
     );
 
+    // Set the button's position
     jumpButton->setPosition(Vec2(visibleSize.width - origin.x - jumpButton->getContentSize().width / 2,
                                  visibleSize.height - origin.y - jumpButton->getContentSize().height / 2));
 
+    // Set the button's scale
     auto menu = Menu::create(jumpButton, nullptr);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu);

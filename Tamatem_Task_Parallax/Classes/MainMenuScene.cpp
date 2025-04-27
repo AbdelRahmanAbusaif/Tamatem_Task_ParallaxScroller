@@ -15,6 +15,7 @@ bool MainMenuScene::init()
     if (!Scene::init())
         return false;
 
+    // declare ParallaxNode and initialize it with multiple layers
     parallaxNode = ParallaxManager::createManager();
     parallaxNode->addInfiniteLayer("Sprite/Background/1.png", Vec2(0.1f, 0),backgroundLayer);
     parallaxNode->addInfiniteLayer("Sprite/Background/2.png", Vec2(0.2f, 0),backgroundLayer);
@@ -27,12 +28,19 @@ bool MainMenuScene::init()
     addChild(parallaxNode);
 
     auto character = Character::createCharacter();
+
+    // 500 is the z-order of the character, you can change it to make it appear in front or behind other layers (You can put 2 or 3 but im use 500 to make it appear in front of the background)
     addChild(character,500);
 
     auto jumpButton = JumpButton::createJumpButton(*character);
     addChild(jumpButton);
 
     // Enable touch events
+    // This is a simple touch listener that will allow you to move the background
+    // It uses the EventListenerTouchOneByOne class to handle touch events
+    // The onTouchBegan method is called when a touch begins, and the onTouchMoved method is called when the touch moves
+    // The touch listener is added to the event dispatcher, which will call the appropriate methods when a touch event occurs
+    // The touch listener is set to swallow touches, which means that it will consume the touch event and prevent it from being passed to other nodes
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->setSwallowTouches(true);
     touchListener->onTouchBegan = CC_CALLBACK_2(MainMenuScene::onTouchBegan, this);

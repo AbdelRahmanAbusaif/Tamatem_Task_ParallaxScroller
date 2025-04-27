@@ -18,7 +18,6 @@ static void problemLoading(const char* filename)
 // on "init" you need to initialize your instance
 bool SplashScene::init()
 {
-    //////////////////////////////
     // 1. super init first
     if ( !Scene::init() )
     {
@@ -35,11 +34,15 @@ bool SplashScene::init()
     }
     else
     {
+        // Position the sprite on the center of the screen
         background->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+
+        // Set the scale to fit the screen
         background->setContentSize(visibleSize);
         this->addChild(background, 0);
     }
 
+    // Schedule the transition to the main menu scene
     schedule(CC_SCHEDULE_SELECTOR(SplashScene::GoToMainMenu), 2.0f);
 
     return true;

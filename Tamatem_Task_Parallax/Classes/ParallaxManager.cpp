@@ -3,6 +3,7 @@
 
 USING_NS_CC;
 
+// Factory Pattern: Responsible for creating and initializing a Parallax instance
 ParallaxManager* ParallaxManager::createManager()
 {
     ParallaxManager* manager = new (std::nothrow) ParallaxManager();
@@ -20,6 +21,7 @@ bool ParallaxManager::init()
     if (!ParallaxNode::init())
         return false;
 
+    // Initialize the visible size and origin
     _visibleSize = Director::getInstance()->getVisibleSize();
     _origin = Director::getInstance()->getVisibleOrigin();
 
@@ -28,6 +30,9 @@ bool ParallaxManager::init()
 
 void ParallaxManager::addInfiniteLayer(const std::string& fileName, const cocos2d::Vec2& ratio,cocos2d::Vector<cocos2d::Sprite *> &layerVector)
 {
+    // Declare a lambda function to create and configure the sprite
+    // This function will create a sprite, set its name, content size, and position
+    // The lambda function captures the fileName and ratio by reference
     auto createAndConfigureSprite = [&](const std::string &nameSuffix, float positionX) -> Sprite* {
         auto sprite = Sprite::create(fileName);
         sprite->setName(fileName + nameSuffix);
@@ -36,6 +41,7 @@ void ParallaxManager::addInfiniteLayer(const std::string& fileName, const cocos2
         return sprite;
     };
 
+    // Create the sprite using the lambda function
     auto sprite1 = createAndConfigureSprite("1", _visibleSize.width / 2 + _origin.x);
     auto sprite2 = createAndConfigureSprite("2", _visibleSize.width / 2 + _origin.x + sprite1->getContentSize().width);
     auto sprite3 = createAndConfigureSprite("3", _visibleSize.width / 2 + _origin.x - sprite1->getContentSize().width);

@@ -2,6 +2,7 @@
 
 USING_NS_CC;
 
+// Factory Pattern: Responsible for creating and initializing a Character instance
 Character* Character::createCharacter()
 {
     Character* character = new (std::nothrow) Character();
@@ -19,11 +20,9 @@ bool Character::init()
     if (!Sprite::initWithFile("Sprite/Character/idle-0.png"))
         return false;
 
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    auto origin = Director::getInstance()->getVisibleOrigin();
-
     this->setScale(2.0f);
-    this->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 50));
+    this->setPosition(Vec2(Director::getInstance()->getVisibleSize().width / 2,
+                           Director::getInstance()->getVisibleSize().height / 2));
 
     playIdleAnimation();
     return true;
@@ -31,12 +30,6 @@ bool Character::init()
 
 void Character::playIdleAnimation()
 {
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    auto origin = Director::getInstance()->getVisibleOrigin();
-
-    this->create("Sprite/Character/idle-0.png");
-    this->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 50));
-
     Vector<SpriteFrame*> idleFrames;
 
     for (int i = 0; i < 12; ++i)
@@ -76,7 +69,6 @@ void Character::playJumpAnimation()
     {
         std::string frameName = StringUtils::format("Sprite/Character/jump-%d.png", i);
 
-        CCLOG("Width and High value : %f %f", this->getContentSize().width, this->getContentSize().height);
         auto frame = SpriteFrame::create(frameName, Rect(0, 0, this->getContentSize().width, this->getContentSize().width));
         frame->setAnchorPoint(Vec2(0.5f, 0.5f));
         jumpFrames.pushBack(frame);
