@@ -12,7 +12,7 @@ It features:
 
 ## 📋 Requirements
 
-- **Cocos2d-x** version: 3.17.2 or 4.0
+- **Cocos2d-x** version: 4.0
 - **Android Studio**: 4.0 or higher
 - **NDK**: r16b or r21e (matching your Cocos2d-x version)
 - **Android SDK**: 28 or higher
