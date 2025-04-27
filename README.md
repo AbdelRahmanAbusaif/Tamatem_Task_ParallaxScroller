@@ -1,19 +1,44 @@
-# Parallax Scene with Character and UI in Cocos2d-x
+# 📜 Project Title: Parallax Scene with Jumping Character (Cocos2d-x Android)
 
-This project is a simple demonstration of a horizontal parallax scene using **Cocos2d-x**, featuring:
+## 📖 Description
 
-- 🌄 A background layer
-- 🚶 A character with **idle** and **jump** animations
-- 🌲 A foreground layer with additional items
-- 🎮 A UI button to trigger a **jump** animation
+This project is a simple parallax scrolling scene built using Cocos2d-x for Android.  
+It features:
+- A horizontally scrollable background with parallax effect (3 layers: background, character, foreground).
+- A character with **idle** animation by default.
+- A UI button ("Jump") that triggers a **jump animation** for the character.
+
+---
+
+## 📋 Requirements
+
+- **Cocos2d-x** version: 3.17.2 or 4.0
+- **Android Studio**: 4.0 or higher
+- **NDK**: r16b or r21e (matching your Cocos2d-x version)
+- **Android SDK**: 28 or higher
+- **Java**: JDK 8
+- Target Device: Android phone or emulator
 
 ---
 
-## 🚀 Features
+## 🛠 How to Build
 
-- Smooth parallax scrolling by dragging the screen horizontally
-- Character stays in place while parallax background moves
-- Idle animation played continuously when idle
-- Jump animation triggered when pressing the "Jump" button
+1. Install and set up **Cocos2d-x** on your system.
+2. Open **Android Studio**.
+3. Select **Open an Existing Project** and choose this project folder.
+4. Wait for Gradle sync to finish.
+5. Make sure your **NDK** path is correctly configured (`local.properties` should have the NDK path).
+6. Connect your Android device (or use an emulator).
+7. Click **Run** ▶️ to build and deploy the app.
+
+**Note:**  
+Make sure that all your assets (sprites, backgrounds, plist files) are placed correctly inside the `Resources/` directory.
 
 ---
+
+## 🎮 Features
+
+- **Parallax Scrolling**: Move the scene horizontally by dragging your finger.
+- **Idle Animation**: Character plays idle animation continuously.
+- **Jump Animation**: Press the "Jump" button to trigger jump animation.
+
