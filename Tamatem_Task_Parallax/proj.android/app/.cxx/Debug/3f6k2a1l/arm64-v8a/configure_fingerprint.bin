@@ -1,0 +1,122 @@
+C/C++ Structured Log=
+;
+9D:\Cocos Project c++\Tamatem_Task_Parallax\CMakeLists.txtC
+A
+?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	®ƒô¹ç2•, ÓÄ†¹ç2\
+Z
+XD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cmake\Modules\CocosBuildHelpers.cmake	®ƒô¹ç2²s  Û•·ê-X
+V
+TD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cmake\Modules\CocosBuildSet.cmake	®ƒô¹ç2µ  Û•·ê-\
+Z
+XD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cmake\Modules\CocosConfigDefine.cmake	®ƒô¹ç2­  ºŞùæ-\
+Z
+XD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cmake\Modules\CocosConfigDepend.cmake	®ƒô¹ç2ï  ºŞùæ-N
+L
+JD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\2d\CMakeLists.txt	¯ƒô¹ç2ê àÉŞùæ-N
+L
+JD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\3d\CMakeLists.txt	¯ƒô¹ç2“	 àÉŞùæ-K
+I
+GD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\CMakeLists.txt	¯ƒô¹ç2	‡- àÉŞùæ-Q
+O
+MD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\audio\CMakeLists.txt	¯ƒô¹ç2
+´# àÉŞùæ-P
+N
+LD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\base\CMakeLists.txt	¯ƒô¹ç2Ì àÉŞùæ-e
+c
+aD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt	¯ƒô¹ç2£T àÉŞùæ-P
+N
+LD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\math\CMakeLists.txt	¯ƒô¹ç2ˆ àíÇÈÀ-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\navmesh\CMakeLists.txt	¯ƒô¹ç2ì àíÇÈÀ-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\network\CMakeLists.txt	¯ƒô¹ç2õ	 àíÇÈÀ-U
+S
+QD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\physics3d\CMakeLists.txt	¯ƒô¹ç2ø àíÇÈÀ-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\physics\CMakeLists.txt	¯ƒô¹ç2¡ àíÇÈÀ-T
+R
+PD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\platform\CMakeLists.txt	¯ƒô¹ç2î, àÉŞùæ-\
+Z
+XD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\platform\android\CMakeLists.txt	¯ƒô¹ç2Å  ñãÀË-T
+R
+PD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\renderer\CMakeLists.txt	¯ƒô¹ç2É! àÉŞùæ-N
+L
+JD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\cocos\ui\CMakeLists.txt	¯ƒô¹ç2’! àÉŞùæ-P
+N
+LD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\extensions\CMakeLists.txt	¯ƒô¹ç2ñ  àÉŞùæ-T
+R
+PD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\Box2D\CMakeLists.txt	¯ƒô¹ç2Ş ğÜÏ¾ë-N
+L
+JD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\CMakeLists.txt	¯ƒô¹ç2 . ğÜÏ¾ë-Y
+W
+UD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\ConvertUTF\CMakeLists.txt	¯ƒô¹ç2² ğÜÏ¾ë-k
+i
+gD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\android-specific\cpufeatures\CMakeLists.txt	¯ƒô¹ç2… ğÜÏ¾ë-h
+f
+dD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\android-specific\pvmp3dec\CMakeLists.txt	¯ƒô¹ç2¼ ğÜÏ¾ë-g
+e
+cD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\android-specific\tremolo\CMakeLists.txt	¯ƒô¹ç2Â ğÜÏ¾ë-U
+S
+QD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\bullet\CMakeLists.txt	¯ƒô¹ç2° ğÜÏ¾ë-W
+U
+SD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\chipmunk\CMakeLists.txt	¯ƒô¹ç2É ğÜÏ¾ë-V
+T
+RD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\clipper\CMakeLists.txt	¯ƒô¹ç2– ğÜÏ¾ë-_
+]
+[D:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\cmake\CocosExternalConfig.cmake	¯ƒô¹ç2 ¼	 ğÜÏ¾ë-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\curl\CMakeLists.txt	¯ƒô¹ç2!ó ğÜÏ¾ë-Y
+W
+UD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\edtaa3func\CMakeLists.txt	¯ƒô¹ç2"œ ğÜÏ¾ë-X
+V
+TD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\freetype2\CMakeLists.txt	¯ƒô¹ç2#ì ğÜÏ¾ë-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\jpeg\CMakeLists.txt	¯ƒô¹ç2$á ğÜÏ¾ë-R
+P
+ND:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\md5\CMakeLists.txt	¯ƒô¹ç2%¿ ÀìÏ¾ë-V
+T
+RD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\openssl\CMakeLists.txt	¯ƒô¹ç2&ç ÀìÏ¾ë-R
+P
+ND:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\png\CMakeLists.txt	¯ƒô¹ç2'à ÀìÏ¾ë-W
+U
+SD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\poly2tri\CMakeLists.txt	¯ƒô¹ç2(£ ÀìÏ¾ë-U
+S
+QD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\recast\CMakeLists.txt	¯ƒô¹ç2)İ ÀìÏ¾ë-W
+U
+SD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\tinyxml2\CMakeLists.txt	¯ƒô¹ç2*µ ÀìÏ¾ë-T
+R
+PD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\unzip\CMakeLists.txt	¯ƒô¹ç2+™ ÀìÏ¾ë-Q
+O
+MD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\uv\CMakeLists.txt	¯ƒô¹ç2,İ ÀìÏ¾ë-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\webp\CMakeLists.txt	¯ƒô¹ç2-á ÀìÏ¾ë-Y
+W
+UD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\websockets\CMakeLists.txt	¯ƒô¹ç2.Ş ÀìÏ¾ë-U
+S
+QD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\xxhash\CMakeLists.txt	¯ƒô¹ç2/’ ÀìÏ¾ë-T
+R
+PD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\xxtea\CMakeLists.txt	¯ƒô¹ç20’ ÀìÏ¾ë-S
+Q
+OD:\Cocos Project c++\Tamatem_Task_Parallax\cocos2d\external\zlib\CMakeLists.txt	¯ƒô¹ç21Â ÀìÏ¾ë-z
+x
+vD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\additional_project_files.txt	¯ƒô¹ç22Ú´ è¬Õ¹ç2w
+u
+sD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\android_gradle_build.json	¯ƒô¹ç23˜S é¬Õ¹ç2|
+z
+xD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\android_gradle_build_mini.json	¯ƒô¹ç24•N ó­Õ¹ç2i
+g
+eD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\build.ninja	¯ƒô¹ç25é• ş©Õ¹ç2m
+k
+iD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\build.ninja.txt	¯ƒô¹ç26r
+p
+nD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\build_file_index.txt	¯ƒô¹ç27« õ­Õ¹ç2s
+q
+oD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\compile_commands.json	¯ƒô¹ç28ÊË™ ü©Õ¹ç2w
+u
+sD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\compile_commands.json.bin	¯ƒô¹ç29¢ú ü©Õ¹ç2}
+{
+yD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\metadata_generation_command.txt	¯ƒô¹ç2:ğ	 ô­Õ¹ç2p
+n
+lD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\prefab_config.json	¯ƒô¹ç2;( ô­Õ¹ç2u
+s
+qD:\Cocos Project c++\Tamatem_Task_Parallax\proj.android\app\.cxx\Debug\3f6k2a1l\arm64-v8a\symbol_folder_index.txt	¯ƒô¹ç2<p ô­Õ¹ç2

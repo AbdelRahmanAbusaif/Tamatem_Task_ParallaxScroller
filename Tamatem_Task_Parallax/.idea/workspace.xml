@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b07c0bec-1c60-4729-abe7-ed4495e9b9b5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/AppDelegate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/AppDelegate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/MainMenuScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/MainMenuScene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/MainMenuScene.h" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/MainMenuScene.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/ParallaxManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ParallaxManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/ParallaxManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ParallaxManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/SplashScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/SplashScene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj.android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/proj.android/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/additional_project_files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/additional_project_files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/compile_commands.json.bin" beforeDir="false" afterPath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/compile_commands.json.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/proj.android/app/.cxx/Debug/5u266g3i/x86/configure_fingerprint.bin" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/proj.android/gradle">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2wJQy5J9Ptnw6m3dC0y8lOvlzVg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.D:/Cocos Project c++/Tamatem_Task_ParallaxScroller/Tamatem_Task_Parallax/proj.android/gradle.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Cocos Project c++/Tamatem_Task_ParallaxScroller/Tamatem_Task_Parallax/proj.android"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="D:/Cocos Project c++/Tamatem_Task_ParallaxScroller/Tamatem_Task_Parallax/proj.android/gradle" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/proj.android/gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--build-cache" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b07c0bec-1c60-4729-abe7-ed4495e9b9b5" name="Changes" comment="" />
+      <created>1745757447367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745757447367</updated>
+    </task>
+    <servers />
+  </component>
+</project>
