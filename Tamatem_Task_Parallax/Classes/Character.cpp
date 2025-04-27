@@ -19,13 +19,24 @@ bool Character::init()
     if (!Sprite::initWithFile("Sprite/Character/idle-0.png"))
         return false;
 
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    auto origin = Director::getInstance()->getVisibleOrigin();
+
     this->setScale(2.0f);
+    this->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 50));
+
     playIdleAnimation();
     return true;
 }
 
 void Character::playIdleAnimation()
 {
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    auto origin = Director::getInstance()->getVisibleOrigin();
+
+    this->create("Sprite/Character/idle-0.png");
+    this->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y - 50));
+
     Vector<SpriteFrame*> idleFrames;
 
     for (int i = 0; i < 12; ++i)
@@ -36,7 +47,7 @@ void Character::playIdleAnimation()
         idleFrames.pushBack(frame);
     }
 
-    auto idleAnimation = Animation::createWithSpriteFrames(idleFrames, 0.2f);
+    auto idleAnimation = Animation::createWithSpriteFrames(idleFrames, 0.1f);
     auto idleAnimate = RepeatForever::create(Animate::create(idleAnimation));
     idleAnimate->setTag(1);
 
@@ -48,31 +59,37 @@ void Character::playJumpAnimation()
     if (_isJumping)
         return;
 
-    _isJumping = true;
     this->stopAllActions();
+    _isJumping = true;
 
-    auto moveUp = MoveBy::create(0.2f, Vec2(0, 100));
-    auto moveDown = MoveBy::create(0.2f, Vec2(0, -100));
+    auto moveUp = MoveBy::create(0.3f, Vec2(0, 200));
+    auto moveDown = MoveBy::create(0.3f, Vec2(0, -200));
+
+    this->runAction(Sequence::create(
+            moveUp,
+            moveDown,
+            nullptr
+    ));
 
     Vector<SpriteFrame*> jumpFrames;
     for (int i = 0; i < 7; ++i)
     {
-        auto frameName = StringUtils::format("Sprite/Character/jump-%d.png", i);
+        std::string frameName = StringUtils::format("Sprite/Character/jump-%d.png", i);
         auto frame = SpriteFrame::create(frameName, Rect(0, 0, this->getContentSize().width, this->getContentSize().width));
+        frame->setAnchorPoint(Vec2(0.5f, 0.5f));
         jumpFrames.pushBack(frame);
     }
 
     auto jumpAnimation = Animation::createWithSpriteFrames(jumpFrames, 0.1f);
     auto jumpAnimate = Animate::create(jumpAnimation);
+    jumpAnimate->setTag(2);
 
-    auto sequence = Sequence::create(
+    this->runAction(Sequence::create(
             jumpAnimate,
             CallFunc::create([this]() {
                 playIdleAnimation();
                 _isJumping = false;
             }),
             nullptr
-    );
-
-    this->runAction(Sequence::create(moveUp, moveDown, sequence));
+    ));
 }

@@ -8,10 +8,8 @@ public:
     static Character* createCharacter();
     bool init() override;
 
-    void playIdleAnimation();
-    void playJumpAnimation();
-    bool isJumping() const { return _isJumping; }
-
+    void  playIdleAnimation();
+    void  playJumpAnimation();
 private:
     bool _isJumping = false;
 };

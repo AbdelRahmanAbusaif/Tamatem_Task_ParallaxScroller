@@ -6,8 +6,8 @@
 class JumpButton : public cocos2d::Node
 {
 public:
-    static JumpButton* createJumpButton(Character* character);
-    bool init(Character* character);
+    static JumpButton* createJumpButton(Character& character);
+    bool init(Character& character);
 
 private:
     Character* _character;

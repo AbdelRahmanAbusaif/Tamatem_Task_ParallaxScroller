@@ -27,11 +27,9 @@ bool MainMenuScene::init()
     addChild(parallaxNode);
 
     auto character = Character::createCharacter();
-    character->setPosition(Director::getInstance()->getVisibleSize() / 2);
-    addChild(character);
+    addChild(character,500);
 
-    auto jumpButton = JumpButton::createJumpButton(character);
-    jumpButton->setPosition(Vec2(Director::getInstance()->getVisibleSize().width - 70, 70));
+    auto jumpButton = JumpButton::createJumpButton(*character);
     addChild(jumpButton);
 
     // Enable touch events
