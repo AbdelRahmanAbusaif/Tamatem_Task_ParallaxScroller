@@ -2,6 +2,7 @@
 #include "Character.h"
 #include "ParallaxManager.h"
 #include "JumpButton.h"
+#include "Firefly.h"
 
 USING_NS_CC;
 
@@ -14,6 +15,9 @@ bool MainMenuScene::init()
 {
     if (!Scene::init())
         return false;
+
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     // declare ParallaxNode and initialize it with multiple layers
     parallaxNode = ParallaxManager::createManager();
@@ -34,6 +38,9 @@ bool MainMenuScene::init()
 
     auto jumpButton = JumpButton::createJumpButton(*character);
     addChild(jumpButton);
+
+    auto firefly = Firefly::createFireFly();
+    addChild(firefly, 1000); // 1000 is the z-order of the firefly, you can change it to make it appear in front or behind other layers
 
     // Enable touch events
     // This is a simple touch listener that will allow you to move the background

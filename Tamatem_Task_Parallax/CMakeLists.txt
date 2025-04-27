@@ -62,6 +62,8 @@ list(APPEND GAME_SOURCE
         Classes/ParallaxManager.cpp
         Classes/MainMenuScene.cpp
         Classes/Character.cpp
+        Classes/Firefly.cpp
+
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
@@ -70,6 +72,7 @@ list(APPEND GAME_HEADER
         Classes/ParallaxManager.h
         Classes/MainMenuScene.h
         Classes/Character.h
+        Classes/Firefly.h
      )
 
 if(ANDROID)

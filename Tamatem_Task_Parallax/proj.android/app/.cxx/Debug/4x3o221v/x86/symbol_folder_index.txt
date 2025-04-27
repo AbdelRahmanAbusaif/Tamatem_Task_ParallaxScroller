@@ -1,0 +1,1 @@
+D:\Cocos Project c++\Tamatem_Task_ParallaxScroller\Tamatem_Task_Parallax\proj.android\app\build\intermediates\cxx\Debug\4x3o221v\obj\x86
