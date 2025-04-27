@@ -8,7 +8,7 @@ public:
     static ParallaxManager* createManager();
     bool init() override;
 
-    void addInfiniteLayer(const std::string& fileName, const cocos2d::Vec2& ratio);
+    void addInfiniteLayer(const std::string& fileName, const cocos2d::Vec2& ratio,cocos2d::Vector<cocos2d::Sprite *>& layerVector);
 
 private:
     cocos2d::Size _visibleSize;

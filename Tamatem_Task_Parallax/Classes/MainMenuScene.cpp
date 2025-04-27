@@ -16,9 +16,14 @@ bool MainMenuScene::init()
         return false;
 
     parallaxNode = ParallaxManager::createManager();
-    parallaxNode->addInfiniteLayer("Sprite/Background/1.png", Vec2(0.1f, 0));
-    parallaxNode->addInfiniteLayer("Sprite/Background/2.png", Vec2(0.3f, 0));
-    parallaxNode->addInfiniteLayer("Sprite/Background/3.png", Vec2(0.5f, 0));
+    parallaxNode->addInfiniteLayer("Sprite/Background/1.png", Vec2(0.1f, 0),backgroundLayer);
+    parallaxNode->addInfiniteLayer("Sprite/Background/2.png", Vec2(0.2f, 0),backgroundLayer);
+
+    parallaxNode->addInfiniteLayer("Sprite/Background/3.png", Vec2(0.3f, 0),midgroundLayer);
+
+    parallaxNode->addInfiniteLayer("Sprite/Background/4.png", Vec2(0.5f, 0),foregroundLayer);
+    parallaxNode->addInfiniteLayer("Sprite/Background/5.png", Vec2(0.6f, 0),foregroundLayer);
+
     addChild(parallaxNode);
 
     auto character = Character::createCharacter();

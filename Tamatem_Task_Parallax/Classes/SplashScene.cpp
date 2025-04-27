@@ -1,10 +1,11 @@
 #include "SplashScene.h"
+#include "MainMenuScene.h"
 
 USING_NS_CC;
 
 Scene* SplashScene::createScene()
 {
-    return HelloWorld::create();
+    return SplashScene::create();
 }
 
 // Print useful error message instead of segfaulting when files are not there.
@@ -26,6 +27,18 @@ bool SplashScene::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+    auto background = Sprite::create("Sprite/SplashScene/Logo.png");
+    if (background == nullptr)
+    {
+        problemLoading("'Sprite/SplashScene/Logo.png'");
+    }
+    else
+    {
+        background->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+        background->setContentSize(visibleSize);
+        this->addChild(background, 0);
+    }
 
     schedule(CC_SCHEDULE_SELECTOR(SplashScene::GoToMainMenu), 2.0f);
 

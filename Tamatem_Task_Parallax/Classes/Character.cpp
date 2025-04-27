@@ -55,7 +55,7 @@ void Character::playJumpAnimation()
     auto moveDown = MoveBy::create(0.2f, Vec2(0, -100));
 
     Vector<SpriteFrame*> jumpFrames;
-    for (int i = 0; i < 9; ++i)
+    for (int i = 0; i < 7; ++i)
     {
         auto frameName = StringUtils::format("Sprite/Character/jump-%d.png", i);
         auto frame = SpriteFrame::create(frameName, Rect(0, 0, this->getContentSize().width, this->getContentSize().width));

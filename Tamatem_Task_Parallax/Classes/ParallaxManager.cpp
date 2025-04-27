@@ -1,6 +1,8 @@
 #include "ParallaxManager.h"
 #include "string"
 
+USING_NS_CC;
+
 ParallaxManager* ParallaxManager::createManager()
 {
     ParallaxManager* manager = new (std::nothrow) ParallaxManager();
@@ -24,7 +26,7 @@ bool ParallaxManager::init()
     return true;
 }
 
-void ParallaxManager::addInfiniteLayer(const std::string& fileName, const cocos2d::Vec2& ratio)
+void ParallaxManager::addInfiniteLayer(const std::string& fileName, const cocos2d::Vec2& ratio,cocos2d::Vector<cocos2d::Sprite *> &layerVector)
 {
     auto sprite1 = Sprite::create(fileName);
     auto sprite2 = Sprite::create(fileName);
@@ -35,4 +37,8 @@ void ParallaxManager::addInfiniteLayer(const std::string& fileName, const cocos2
     addChild(sprite1, 1, ratio, Vec2(_visibleSize.width / 2 + _origin.x, _visibleSize.height / 2 + _origin.y));
     addChild(sprite2, 1, ratio, Vec2(_visibleSize.width / 2 + _origin.x + width, _visibleSize.height / 2 + _origin.y));
     addChild(sprite3, 1, ratio, Vec2(_visibleSize.width / 2 + _origin.x - width, _visibleSize.height / 2 + _origin.y));
+
+    layerVector.pushBack(sprite1);
+    layerVector.pushBack(sprite2);
+    layerVector.pushBack(sprite3);
 }
