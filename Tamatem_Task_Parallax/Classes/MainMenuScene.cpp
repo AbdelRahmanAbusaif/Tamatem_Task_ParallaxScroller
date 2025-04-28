@@ -18,16 +18,23 @@ bool MainMenuScene::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    auto sizeOfForegroundItem = visibleSize / 4 ;
 
     // declare ParallaxNode and initialize it with multiple layers
     parallaxNode = ParallaxManager::createManager();
-    parallaxNode->addInfiniteLayer("Sprite/Background/1.png", Vec2(0.1f, 0),backgroundLayer);
-    parallaxNode->addInfiniteLayer("Sprite/Background/2.png", Vec2(0.2f, 0),backgroundLayer);
+    parallaxNode->addInfiniteLayer("Sprite/Background/1.png", Vec2(0.1f, 0),backgroundLayer,visibleSize.width/2,visibleSize);
+    parallaxNode->addInfiniteLayer("Sprite/Background/2.png", Vec2(0.2f, 0),backgroundLayer,visibleSize.width/2,visibleSize);
 
-    parallaxNode->addInfiniteLayer("Sprite/Background/3.png", Vec2(0.3f, 0),midgroundLayer);
+    parallaxNode->addInfiniteLayer("Sprite/Background/3.png", Vec2(0.3f, 0),midgroundLayer,visibleSize.width/2,visibleSize);
+    parallaxNode->addInfiniteLayer("Sprite/Background/4.png", Vec2(0.5f, 0),midgroundLayer,visibleSize.width/2,visibleSize);
+    parallaxNode->addInfiniteLayer("Sprite/Background/5.png", Vec2(0.6f, 0),midgroundLayer,visibleSize.width/2,visibleSize);
 
-    parallaxNode->addInfiniteLayer("Sprite/Background/4.png", Vec2(0.5f, 0),foregroundLayer);
-    parallaxNode->addInfiniteLayer("Sprite/Background/5.png", Vec2(0.6f, 0),foregroundLayer);
+    parallaxNode->addInfiniteLayer(("Sprite/Foreground/Rock1.PNG"), Vec2(0.7f, 0),foregroundLayer,visibleSize.width, sizeOfForegroundItem);
+    parallaxNode->addInfiniteLayer(("Sprite/Foreground/Rock2.PNG"), Vec2(0.7f, 0),foregroundLayer,visibleSize.width/2, sizeOfForegroundItem / 2 );
+    parallaxNode->addInfiniteLayer(("Sprite/Foreground/Rock3.PNG"), Vec2(0.75f, 0),foregroundLayer,visibleSize.width/8, sizeOfForegroundItem / 2 );
+
+    parallaxNode->addInfiniteLayer(("Sprite/Foreground/Grass1.png"), Vec2(0.75f, 0),foregroundLayer,visibleSize.width/2, visibleSize );
+    parallaxNode->addInfiniteLayer(("Sprite/Foreground/Grass2.png"), Vec2(0.75f, 0),foregroundLayer,visibleSize.width/2, visibleSize );
 
     addChild(parallaxNode);
 
